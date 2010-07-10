@@ -17,6 +17,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common \
     vendor/nexus/overlay/dictionaries
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
