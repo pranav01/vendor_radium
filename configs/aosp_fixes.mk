@@ -30,3 +30,8 @@ PRODUCT_COPY_FILES += \
 # Proprietary latinime lib needed for Keyboard swyping
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
+# Camera Effects
+PRODUCT_COPY_FILES +=  \
+    vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
