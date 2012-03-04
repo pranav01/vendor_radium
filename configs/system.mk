@@ -17,6 +17,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common \
     vendor/nexus/overlay/dictionaries
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/nexus/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/nexus/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
