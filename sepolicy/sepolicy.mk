@@ -1,10 +1,10 @@
 #
 # This policy configuration will be used by all products that
-# inherit from CM
+# inherit from radium
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/cm/sepolicy
+    vendor/radium/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \
