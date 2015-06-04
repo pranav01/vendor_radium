@@ -1,11 +1,11 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common RADIUM stuff
+$(call inherit-product, vendor/radium/config/common.mk)
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
+# Include RADIUM audio files
+include vendor/radium/config/radium_audio.mk
 
-# Include CM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Include RADIUM LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/radium/overlay/dictionaries
 
 # Optional CM packages
 PRODUCT_PACKAGES += \

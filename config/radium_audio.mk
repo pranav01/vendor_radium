@@ -1,5 +1,5 @@
 #
-# CyanogenMod Audio Files
+# Radium Audio Files
 #
 
 ALARM_PATH := vendor/radium/prebuilt/common/media/audio/alarms

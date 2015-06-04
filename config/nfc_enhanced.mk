@@ -1,3 +1,3 @@
-# This device supports CM enhanced NFC
+# This device supports RADIUM enhanced NFC
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/com.cyanogenmod.nfc.enhanced.xml:system/etc/permissions/com.cyanogenmod.nfc.enhanced.xml
+    vendor/radium/config/permissions/com.radium.nfc.enhanced.xml:system/etc/permissions/com.radium.nfc.enhanced.xml
