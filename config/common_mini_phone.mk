@@ -4,6 +4,10 @@ $(call inherit-product, vendor/radium/config/common.mk)
 # Include RADIUM audio files
 include vendor/radium/config/radium_audio.mk
 
+# Required RADIUM packages
+PRODUCT_PACKAGES += \
+    LatinIME
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Argon.ogg \

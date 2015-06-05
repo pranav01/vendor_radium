@@ -1,6 +1,13 @@
 # Inherit common RADIUM stuff
 $(call inherit-product, vendor/radium/config/common_full.mk)
 
+# Required RADIUM packages
+PRODUCT_PACKAGES += \
+    LatinIME
+
+# Include RADIUM LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/RADIUM/overlay/dictionaries
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Argon.ogg \
