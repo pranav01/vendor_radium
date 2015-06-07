@@ -132,8 +132,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    CMHome \
-    CyanogenSetupWizard
+    CMHome 
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
