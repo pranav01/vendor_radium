@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    CMHome 
+    CMHome \
+    OTACenter
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
@@ -224,6 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.radium.version=$(RADIUM_VERSION) \
   ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
   ro.modversion=$(RADIUM_VERSION) \
+  radium.ota.version=$(shell date -u +%Y.%m.%d)
   
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
