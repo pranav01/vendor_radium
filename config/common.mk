@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     LockClock \
     CMHome \
-    OTACenter
+    RadiumOTA
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
