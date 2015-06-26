@@ -211,10 +211,10 @@ PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # release
 ifeq ($(RADIUM_RELEASE),true)
-    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-OFFICIAL-$(RADIUM_BUILD)-$(shell date -u +%Y%m%d)
+    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-OFFICIAL-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 else
     RADIUM_VERSION_STATE := UNOFFICIAL
-    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-UNOFFICIAL-$(RADIUM_BUILD)-$(shell date -u +%Y%m%d)
+    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-UNOFFICIAL-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -225,7 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.radium.version=$(RADIUM_VERSION) \
   ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
   ro.modversion=$(RADIUM_VERSION) \
-  radium.ota.version=$(shell date -u +%Y.%m.%d)
+  radium.ota.version=$(shell date  +%Y%m%d)
   
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
