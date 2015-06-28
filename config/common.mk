@@ -225,7 +225,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.radium.version=$(RADIUM_VERSION) \
   ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
   ro.modversion=$(RADIUM_VERSION) \
-  radium.ota.version=$(shell date  +%Y%m%d)
+  radium.ota.version=$(shell date +%Y%m%d)
   
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
