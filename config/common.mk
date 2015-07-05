@@ -227,6 +227,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(RADIUM_VERSION) \
   radium.ota.version=$(shell date +%Y%m%d)
   
+#SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/radium/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/radium/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
   ifneq ($(RADIUM_BUILDTYPE), UNOFFICIAL)
