@@ -211,11 +211,11 @@ PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # release
 ifeq ($(RADIUM_RELEASE),true)
-    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-OFFICIAL-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
+    RADIUM_VERSION_STATE := OFFICIAL
 else
     RADIUM_VERSION_STATE := UNOFFICIAL
-    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-UNOFFICIAL-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 endif
+    RADIUM_VERSION := Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE)-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.radium.version=$(RADIUM_VERSION)
@@ -225,13 +225,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.radium.version=$(RADIUM_VERSION) \
   ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
   ro.modversion=$(RADIUM_VERSION) \
-  radium.ota.version=$(shell date +%Y%m%d)
+  radium.ota.version=$(shell date +%Y%m%d) \
+  ro.romstats.url=http://team-radium.webege.com/ \
+  ro.romstats.name=Team-Radium \
+  ro.romstats.version=$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE) \
+  ro.romstats.tframe=7
   
-#SuperSU
+
+# SuperSU and RomStats
 PRODUCT_COPY_FILES += \
     vendor/radium/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/radium/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-
+    vendor/radium/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/radium/prebuilt/common/RomStats.apk:system/app/RomStats/RomStats.apk
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
