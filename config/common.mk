@@ -124,13 +124,13 @@ PRODUCT_PACKAGES += \
     libemoji \
     Terminal
 
-# Custom CM packages
+# Custom packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
     CMFileManager \
-    Eleven \
+    Apollo \
     LockClock \
     CMHome \
     RadiumOTA
