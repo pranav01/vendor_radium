@@ -3,4 +3,3 @@ do
     add_lunch_combo radium_$device-userdebug
 done
 
-export LOCALVERSION="-Radium"
