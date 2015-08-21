@@ -209,7 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/radium/overlay/common
 
 RADIUM_VERSION_MAJOR = 1
-RADIUM_VERSION_MINOR = 2
+RADIUM_VERSION_MINOR = 3
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # release
@@ -218,19 +218,19 @@ ifeq ($(RADIUM_RELEASE),true)
 else
     RADIUM_VERSION_STATE := UNOFFICIAL
 endif
-    RADIUM_VERSION := Moar-Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE)-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
+    RADIUM_VERSION := Poised-Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE)-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 
 RADIUM_DISPLAY_VERSION := $(RADIUM_VERSION) 
 
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.radium.version=$(RADIUM_VERSION) \
-     	ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
-  	ro.modversion=$(RADIUM_VERSION) \
-  	radium.ota.version=$(shell date +%Y%m%d) \
-  	ro.romstats.url=http://team-radium.webege.com/stats \
-  	ro.romstats.name=Team-Radium \
-  	ro.romstats.version=$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE) \
-  	ro.romstats.tframe=7
+	ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
+	ro.modversion=$(RADIUM_VERSION) \
+	radium.ota.version=$(shell date +%Y%m%d) \
+	ro.romstats.url=http://team-radium.webege.com/stats \
+	ro.romstats.name=Team-Radium \
+	ro.romstats.version=$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE) \
+	ro.romstats.tframe=7
   
 # SuperSU and RomStats
 PRODUCT_COPY_FILES += \
