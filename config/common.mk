@@ -209,7 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/radium/overlay/common
 
 RADIUM_VERSION_MAJOR = 1
-RADIUM_VERSION_MINOR = 3
+RADIUM_VERSION_MINOR = 4
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # release
@@ -218,7 +218,7 @@ ifeq ($(RADIUM_RELEASE),true)
 else
     RADIUM_VERSION_STATE := UNOFFICIAL
 endif
-    RADIUM_VERSION := Poised-Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE)-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
+    RADIUM_VERSION := Random-Radium-$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE)-$(RADIUM_BUILD)-$(shell date +%Y%m%d)
 
 RADIUM_DISPLAY_VERSION := $(RADIUM_VERSION)
 
@@ -227,7 +227,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.radium.releasetype=$(RADIUM_BUILDTYPE) \
 	ro.modversion=$(RADIUM_VERSION) \
 	radium.ota.version=$(shell date +%Y%m%d) \
-	ro.romstats.url=http://team-radium.comyr.com/stats \
+	ro.romstats.url=http://team-radium.esy.es/stats \
 	ro.romstats.name=Team-Radium \
 	ro.romstats.version=$(RADIUM_VERSION_MAJOR).$(RADIUM_VERSION_MINOR)-$(RADIUM_VERSION_STATE) \
 	ro.romstats.tframe=7
