@@ -136,6 +136,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMHome \
     RadiumOTA
+    CyanogenSetupWizard \
+    CMSettingsProvider
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
