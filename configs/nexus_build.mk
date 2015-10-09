@@ -17,3 +17,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     libemoji 
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
