@@ -14,9 +14,7 @@
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
-    LatinIME \
-    Launcher3 \
-    libemoji 
+    Launcher3
 
 # Busybox
 PRODUCT_PACKAGES += \
