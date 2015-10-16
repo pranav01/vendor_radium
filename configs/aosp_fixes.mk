@@ -30,7 +30,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+ifneq ($(TARGET_PRODUCT),nexus_flounder)
 # Camera Effects
 PRODUCT_COPY_FILES +=  \
     vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif
