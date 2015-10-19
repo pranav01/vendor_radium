@@ -17,6 +17,10 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker
 
+#Custom Packages
+PRODUCT_PACKAGES += \
+    PureNexusSettings
+
 ifneq ($(TARGET_PRODUCT),nexus_flounder)
 # Busybox
 PRODUCT_PACKAGES += \
