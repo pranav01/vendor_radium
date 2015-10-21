@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
 
 #Custom Packages
 PRODUCT_PACKAGES += \
-    PureNexusSettings
+    PureNexusSettings \
+    LockClock
 
 ifneq ($(TARGET_PRODUCT),nexus_flounder)
 # Busybox
