@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
 #Custom Packages
 PRODUCT_PACKAGES += \
     PureNexusSettings \
-    LockClock
+    LockClock \
+    WallpaperPicker
 
 ifneq ($(TARGET_PRODUCT),nexus_flounder)
 # Busybox
