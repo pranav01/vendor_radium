@@ -23,11 +23,9 @@ PRODUCT_PACKAGES += \
     LockClock \
     WallpaperPicker
 
-ifneq ($(TARGET_PRODUCT),nexus_flounder)
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
-endif
 
 # apns-conf.xml
 PRODUCT_COPY_FILES += \
