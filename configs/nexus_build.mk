@@ -27,10 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-# apns-conf.xml
-PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
