@@ -13,6 +13,14 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
+ifneq ($(filter nexus_angler,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+endif
+ifneq ($(filter nexus_bullhead,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nexus/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter nexus_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
