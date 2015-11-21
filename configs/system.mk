@@ -20,6 +20,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
 
+# userinit support
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
