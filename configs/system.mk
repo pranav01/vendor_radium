@@ -13,8 +13,13 @@
 # limitations under the License.
 
 # Include overlays
+ifneq ($(filter nexus_fugu,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/nexus/overlay/tv
+else
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common
+endif
 
 # init.d script support
 PRODUCT_COPY_FILES += \
