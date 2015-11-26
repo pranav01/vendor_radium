@@ -15,8 +15,9 @@
 include vendor/nexus/configs/system.mk
 include vendor/nexus/configs/version.mk
 
-# Busybox
+# Optional Packages
 PRODUCT_PACKAGES += \
+    Browser \
     Busybox
 
 # SuperSU FTW
