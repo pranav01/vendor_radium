@@ -18,7 +18,8 @@ include vendor/nexus/configs/version.mk
 # Optional Packages
 PRODUCT_PACKAGES += \
     Browser \
-    Busybox
+    Busybox \
+    LockClock
 
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
