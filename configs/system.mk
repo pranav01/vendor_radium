@@ -21,6 +21,22 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common
 endif
 
+# NTFS support
+PRODUCT_PACKAGES += \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
+
+# exfat support
+WITH_EXFAT ?= true
+ifeq ($(WITH_EXFAT),true)
+TARGET_USES_EXFAT := true
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+endif
+
 # init.d script support
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
