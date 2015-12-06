@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# PureNexus-specific init file
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
