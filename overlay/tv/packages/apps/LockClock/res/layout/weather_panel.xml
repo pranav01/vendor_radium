@@ -108,7 +108,7 @@
 
         <RelativeLayout
             android:id="@+id/weather_temps_panel"
-            android:layout_width="wrap_content"
+            android:layout_width="44dip"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_centerVertical="true" >
