@@ -30,3 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=fugu \
     BUILD_FINGERPRINT=google/molly/molly:5.0.2/LRX22G/1649326:user/release-keys \
     PRIVATE_BUILD_DESC="molly-user 5.0.2 LRX22G 1649326 release-keys"
+
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/bootanimation/molly.zip:system/media/bootanimation.zip
