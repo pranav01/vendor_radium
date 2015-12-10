@@ -12,25 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/nexus/configs/system.mk
-include vendor/nexus/configs/version.mk
+ifeq ($(PRODUCT_IS_ATV),true)
 
-# Optional Packages
-PRODUCT_PACKAGES += \
-    Browser \
-    Busybox \
-    LockClock
+LOCAL_PATH := $(call my-dir)
 
-# SuperSU FTW
-PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Google property overides
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.android.wifi-watchlist=GoogleGuest
-
-# Include our custom apps
-PRODUCT_PACKAGES += \
-    AppDrawer \
-    PureNexusCustomizer
+endif
