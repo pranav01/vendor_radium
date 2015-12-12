@@ -15,6 +15,10 @@
 include vendor/nexus/configs/system.mk
 include vendor/nexus/configs/version.mk
 
+# Include TV overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/nexus/overlay/tv
+
 # Optional Packages
 PRODUCT_PACKAGES += \
     Browser \
