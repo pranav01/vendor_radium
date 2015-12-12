@@ -27,7 +27,7 @@ PRODUCT_MANUFACTURER := Google
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=fugu \
+    PRODUCT_NAME=molly \
     BUILD_FINGERPRINT=google/molly/molly:5.0.2/LRX22G/1649326:user/release-keys \
     PRIVATE_BUILD_DESC="molly-user 5.0.2 LRX22G 1649326 release-keys"
 
