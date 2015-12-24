@@ -13,27 +13,27 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
-ifneq ($(filter nexus_angler,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_bullhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_flo,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_flo,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_flounder,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_flounder,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/flounder.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/flounder.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_hammerhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter radium_shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+        vendor/radium/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
 endif

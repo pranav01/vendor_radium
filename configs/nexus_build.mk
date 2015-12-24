@@ -14,7 +14,7 @@
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/nexus/overlay/common
+    vendor/radium/overlay/common
 
 # Main Required Packages
 PRODUCT_PACKAGES += \
@@ -33,5 +33,5 @@ PRODUCT_PACKAGES += \
 
 # SuperSU FTW
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+    vendor/radium/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/radium/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon

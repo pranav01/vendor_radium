@@ -1,7 +1,6 @@
-add_lunch_combo nexus_angler-user
-add_lunch_combo nexus_bullhead-user
-add_lunch_combo nexus_flo-user
-add_lunch_combo nexus_flounder-user
-add_lunch_combo nexus_fugu-user
-add_lunch_combo nexus_hammerhead-user
-add_lunch_combo nexus_shamu-user
+for device in $(cat vendor/radium/devices)
+do
+  add_lunch_combo radium_$device-user
+  add_lunch_combo radium_$device-userdebug
+  add_lunch_combo radium_$device-eng
+done

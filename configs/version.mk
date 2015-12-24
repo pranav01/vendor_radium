@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 The Team-Radium Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#pure nexus versioning
-export NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
+ifndef RADIUM_BUILDTYPE
+RADIUM_BUILDTYPE := unofficial
+endif
+RADIUM_VERSION := Thug-Radium-2.0-$(TARGET_PRODUCT)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.purenexus.version=$(NEXUS_VERSION)
+    ro.radium.version=$(RADIUM_VERSION)
 

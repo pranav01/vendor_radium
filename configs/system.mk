@@ -30,21 +30,21 @@ endif
 
 # init.d script support
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/radium/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/radium/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # PureNexus-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
+    vendor/radium/prebuilt/etc/init.purenexus.rc:root/init.purenexus.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/nexus/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/nexus/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/radium/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/radium/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/radium/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
